@@ -22,6 +22,21 @@ def meta_data(month,year):
             newtempD.append(tempD[0])
             tempD.pop(0)
         finalD.append(newtempD)
+    length = len(finalD)
+    print(finalD)
+    s = finalD.pop(length - 1)
+    print(s)
+    finalD.pop(0)
+
+    
+    for a in range(len(finalD)):
+        finalD[a].pop(6)
+        finalD[a].pop(13)
+        finalD[a].pop(12)
+        finalD[a].pop(11)
+        finalD[a].pop(10)
+        finalD[a].pop(9)
+        finalD[a].pop(0)
     print(finalD)
 
 
