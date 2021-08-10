@@ -23,9 +23,8 @@ def meta_data(month,year):
             tempD.pop(0)
         finalD.append(newtempD)
     length = len(finalD)
-    print(finalD)
-    s = finalD.pop(length - 1)
-    print(s)
+    
+    finalD.pop(length - 1)
     finalD.pop(0)
 
     
@@ -37,7 +36,7 @@ def meta_data(month,year):
         finalD[a].pop(10)
         finalD[a].pop(9)
         finalD[a].pop(0)
-    print(finalD)
+    return finalD
 
 
 
@@ -45,5 +44,5 @@ def meta_data(month,year):
 
 
 
-
-meta_data(1,2013)
+hello = meta_data(1,2013)
+print(hello)
