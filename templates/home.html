@@ -24,9 +24,9 @@
 		<h>You can predict the air quality on individual years or on the complete combination of years</h>
 		<br><br/>
 		<p>As an example, chose the year from below</p>
-		<div class="container row align-items-start">
+		<div class="container row align-items-start btn-group" role="group" aria-label="Basic mixed styles example">
 			{% for item in files %}
-			<div class="col">
+			<div class="col" type="button">
 				{{ item }}
 			</div>
          {% endfor %}
