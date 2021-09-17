@@ -10,22 +10,56 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    csv_files = []
+    home.csv_files = []
     # Lot of repetition done. Improve the below code
     for item in glob.iglob('Data/Real-Data/*.csv'):
         name = item.replace('Data/Real-Data/', '')
         name1 = name.replace('.csv', '')
         name2 = name1.replace('real_', '')
         name3 = name2.replace('Real_Combine', '2013-2018')
-        csv_files.append(name3)
-    return render_template('home.html', files = csv_files)
+        home.csv_files.append(name3)
+    return render_template('home.html', files = home.csv_files)
 
-@app.route('/predict',methods=['POST'])
+@app.route('/predict',methods=['POST', 'GET'])
 def predict():
-    df=pd.read_csv('Data/Real-Data/real_2018.csv')
-    my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
-    my_prediction=my_prediction.tolist()
-    return render_template('result.html',prediction = my_prediction)
+    home.csv_files
+    for item in home.csv_files:
+        if i == home.csv_files[0]:
+            df=pd.read_csv('Data/Real-Data/real_{}.csv'.format(item))
+            my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
+            my_prediction=my_prediction.tolist()
+        elif i == home.csv_files[1]:
+            df=pd.read_csv('Data/Real-Data/real_{}.csv'.format(item))
+            my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
+            my_prediction=my_prediction.tolist()
+        elif i == home.csv_files[2]:
+            df=pd.read_csv('Data/Real-Data/real_{}.csv'.format(item))
+            my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
+            my_prediction=my_prediction.tolist()
+        elif i == home.csv_files[3]:
+            df=pd.read_csv('Data/Real-Data/real_{}.csv'.format(item))
+            my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
+            my_prediction=my_prediction.tolist()
+        elif i == home.csv_files[4]:
+            df=pd.read_csv('Data/Real-Data/real_{}.csv'.format(item))
+            my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
+            my_prediction=my_prediction.tolist()
+        elif i == home.csv_files[5]:
+            df=pd.read_csv('Data/Real-Data/real_{}.csv'.format(item))
+            my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
+            my_prediction=my_prediction.tolist()
+        elif i == home.csv_files[6]:
+            df=pd.read_csv('Data/Real-Data/Real_Combine.csv')
+            my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
+            my_prediction=my_prediction.tolist()
+    return render_template('results.html',prediction = my_prediction)
+            
+    # df=pd.read_csv('Data/Real-Data/real_2018.csv')
+    # my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
+    # my_prediction=my_prediction.tolist()
+    # return render_template('result.html',prediction = my_prediction)
+
+
 
 
 if __name__ == '__main__':

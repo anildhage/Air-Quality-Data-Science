@@ -25,9 +25,9 @@
 		<br><br/>
 		<p>As an example, chose the year from below</p>
 		<div class="container row align-items-start btn-group" role="group" aria-label="Basic mixed styles example">
-			{% for item in files %}
-			<div class="col" type="button">
-				{{ item }}
+			{% for i in files %}
+			<div action ="{{url_for('predict')}}" class="col" type="button"  methods='POST' >
+				<div  >{{ i }} </div>
 			</div>
          {% endfor %}
 		</div>
