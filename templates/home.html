@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- bootstrap css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 	<title>Home</title>
+	
 	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
@@ -9,15 +12,28 @@
 
 	<header>
 		<div class="container">
-		<div id="brandname">
-			Machine Learning App with Flask
+		<div>
+			Machine Learning App with using flask 
 		</div>
-		<h2>Air Quality Index Prediction</h2>
+		<h2>Air Quality Prediction</h2>
 		
 	</div>
 	</header>
+	<div class="container">
 
-	<div class="ml-container">
+		<h>You can predict the air quality on individual years or on the complete combination of years</h>
+		<br><br/>
+		<p>As an example, chose the year from below</p>
+		<div class="container row align-items-start">
+			{% for item in files %}
+			<div class="col">
+				{{ item }}
+			</div>
+         {% endfor %}
+		</div>
+
+	</div>
+	<div class="container">
 
 		<form action="{{ url_for('predict')}}" method="POST">
 		<p>Click the Predict Button</p>
@@ -31,8 +47,8 @@
 		
 	</div>
 
-	
-	
-
+	<!-- Optional JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 </body>
 </html>
