@@ -1,6 +1,6 @@
 from flask import Flask,render_template,url_for,request
 import pandas as pd
-
+import glob
 import pickle
 
 # load the model from disk
@@ -10,7 +10,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('home.html')
+    csv_files = []
+    # Lot of repetition done. Improve the below code
+    for item in glob.iglob('Data/Real-Data/*.csv'):
+        name = item.replace('Data/Real-Data/', '')
+        name1 = name.replace('.csv', '')
+        name2 = name1.replace('real_', '')
+        name3 = name2.replace('Real_Combine', '2013-2018')
+        csv_files.append(name3)
+    return render_template('home.html', files = csv_files)
 
 @app.route('/predict',methods=['POST'])
 def predict():
@@ -18,7 +26,6 @@ def predict():
     my_prediction=loaded_model.predict(df.iloc[:,:-1].values)
     my_prediction=my_prediction.tolist()
     return render_template('result.html',prediction = my_prediction)
-
 
 
 if __name__ == '__main__':
