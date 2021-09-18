@@ -10,26 +10,71 @@
 	<header>
 		<div class="container">
 		<div id="brandname">
-			Machine Learning App with Flask
+			Machine Learning App with Flask 
 		</div>
+		<br>
+			(This web page will be very basic as we are only focusing on showing predictions and some details about it)
+
 		<h2>Air Quality Index Prediction</h2>
+		<br>
+		<p> We will make predictions on a yearly data and combined data, choose the dataset from below </p>
+
+		<table>
+			<tr>
+			</tr>
+			<tr>
+			  <td>2013</td>
+			</tr>
+			<tr>
+			  <td>2014</td>
+			</tr>
+			<td>2015</td>
+			</tr>
+			<td>2016</td>
+			</tr>
+			<td>2017</td>
+			</tr>
+			<td>2018</td>
+			</tr>
+			<td>2013-2018 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(This dataset is a combination of all the above years)</td>
+			</tr>
+		  </table>
+		  <br>
+		<div>Enter the year below and submit to find the results of the predictions.</div>
+		<br>
+		<br>
+			<form action = "#" method = "post">  
+				<table>  
+					<tr><td>Year</td>  
+					<td><input type ="text" name ="value"></td></tr>  
+					<tr><td><input type = "submit"></td></tr>
+				</table>  
+				<table>  
+					<td><a href="/">Reset</a></td>
+				</table>  
+			</form> 
+
+		<br>
+		<br>
+		<br>
+		<!-- this predicts the dataset selected-->
+		<table>
+			<tr>
+			  <th>Predictions</th>
+			</tr>
+			{% for item in prediction %}
+			<tr>
+			  <td>{{item}}</td>
+			</tr>
+			{% endfor %}
+		</table>
 		
+
+			<!-- this  the dataset selected-->
+		<p>{{num}}</p>
+
 	</div>
 	</header>
-
-	<div class="ml-container">
-
-		<form action="{{ url_for('predict')}}" method="POST">
-		<p>Click the Predict Button</p>
-		<!-- <input type="text" name="comment"/> -->
-		<textarea name="message" rows="6" cols="50"></textarea>
-		<br/>
-
-		<input type="submit" class="btn-info" value="predict">
-		
-	</form>
-		
-	</div>
 
 	
 	
