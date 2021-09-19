@@ -90,7 +90,7 @@ If you have any feedback, please reach out to us at i.am.dhage@gmail.com
 ## Sources
 
 ## License
-
+[MIT](https://github.com/anildhage/Air-Quality-Data-Science/blob/master/LICENSE.md)
 
 
 
