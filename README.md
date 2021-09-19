@@ -8,6 +8,32 @@ This [website](https://en.tutiempo.net/climate) will have climate data of every 
 ## Motivation
 After learning about python programming language, this topic of data science was interesting to me. Hence I explored why it is done. I was very much interested in it. Hence, I decided to implement a project that covers the complete data science work in a simple way. 
 
+## Demo
+![](ml.gif)
+The years that I am entering are the climates historic datasets. The results are shown below Predictions
+
+## Directory
+```
+├── Data
+│   ├── AQI 
+│   ├── Deployment
+│   │   ├── Static
+│   │   └── Templates
+│   ├── Html_Data
+│   │   ├── 2013
+│   │   ├── 2014
+│   │   ├── 2015
+│   │   ├── 2016
+│   │   ├── 2017
+│   │   └── 2018
+│   └── Real-Data
+├── ML-Modals
+├── pickle-files
+└── templates
+
+
+```
+
 ## Project status
     On-Going
 
@@ -24,7 +50,6 @@ After learning about python programming language, this topic of data science was
 2. HTML
 3. heroku for deployment
 
-<! -- ## Needs of this project -->
 ## Run Locally
 ### Run this program on your computer
 1. fork this repository
@@ -34,7 +59,7 @@ After learning about python programming language, this topic of data science was
   pip install -r requirements.txt
 4. After the downloads, run the below code that will start the program
   python app.py
-5. In the terminal, find the server link shown as 'Running on http://127.0.0.1:5000/'. 
+5. In the terminal, find the server link. Open this in your browser. 
 
 ## Contributing
 
@@ -48,11 +73,6 @@ I welcome any contributions from you all to make this program work efficiently a
 ### If you are interested, fork the project, clone the repository, make changes, send a pull requrest. 
 
 
-## Demo
-Insert gif or link to demo
-  
-
-  
 ## Feedback
 
 If you have any feedback, please reach out to us at i.am.dhage@gmail.com
@@ -64,12 +84,6 @@ If you have any feedback, please reach out to us at i.am.dhage@gmail.com
 1. How a data science project is supposed to be implemented from it initiation to deployment.
 2. How flask can be used to deploy a ML model
 3. How to scrape websites. Static and Dynamic
-
-  
-  
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
   
 
