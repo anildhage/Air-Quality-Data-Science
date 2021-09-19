@@ -36,6 +36,21 @@ The years that I am entering are the climates historic datasets. The results are
 
 ## Project status
     On-Going
+## Steps performed in this project
+1. Scraped website, and saved its contents in a folder called HTML_Data
+2. The target feature which is also required to train the model is in AQI folder which is saved from a different source. 
+3. Both of these folders having the data we need. We bring them together for preprocessing and training. They are saved in the Real-Data folder
+4. We use jupyter notebooks or google colab to process the raw data, then train using ML-Models. Models performed can be found in ML-Modals folder
+5. In order to deploy the program, we save the models in pickle file which you can find it in the pickle-files folder
+6. After comparison, one model gave best result which is the random forest regression. Hence only this model is used for deployment to heroku
+
+## Machine Learning models used
+1. Linear Regression
+2. Lasso Regression
+3. Decision Tree 
+4. K nearest Neighbour
+5. Random Forest 
+6. Xgboost regression
 
 ## Methods Used
 1. Data Gathering
