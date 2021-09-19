@@ -76,7 +76,6 @@ I welcome any contributions from you all to make this program work efficiently a
 ## Feedback
 
 If you have any feedback, please reach out to us at i.am.dhage@gmail.com
-
   
 
 ## Lessons Learned
@@ -85,9 +84,6 @@ If you have any feedback, please reach out to us at i.am.dhage@gmail.com
 2. How flask can be used to deploy a ML model
 3. How to scrape websites. Static and Dynamic
 
-  
-
-## Sources
 
 ## License
 [MIT](https://github.com/anildhage/Air-Quality-Data-Science/blob/master/LICENSE.md)
