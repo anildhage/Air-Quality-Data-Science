@@ -1,103 +1,82 @@
 ## Overview
-Air Quality Prediction. Here we implement a data science project from scratch. Based on the historical climate data, a various cmachine learning models are created in this project that will predict the quality of air. This project will help you understand the complete process behind how a data turned into a model which will then be used to predict future climatic conditions. 
+Air Quality Prediction. In this project, we follow the complete life cycle of a data science project from data gathering to deployment of machine learning model. 
+
+## Description
+This [website](https://en.tutiempo.net/climate) will have climate data of every country in the world with historical data in some cases date back to 1929. Using a specified locations climate data, we perform feature engineering, explanatory data analysis, feature selection, a various machine learning model training, and deployment of the application to a server. 
+
 
 ## Motivation
-During the pandemic that happened in 2020, I was not able to work and do anything. Due to the personal situations I couldn't build my career like search a job and work at one. Hence, I started learning about programming and taught code to myself. To get started I chose python programming and found data science as an interesting topic to me. Then began my journey to real build projects, so that once I am sorted, I would be able to get a job and grow my career in this industry as a Data Scientist. 
+After learning about python programming language, this topic of data science was interesting to me. Hence I explored why it is done. I was very much interested in it. Hence, I decided to implement a project that covers the complete data science work in a simple way. 
 
 ## Project status
     On-Going
+
 ## Methods Used
+1. Data Gathering
+2. Fearue Engineering
+3. EDA
+4. Feature Selection
+5. Model Building
+6. Model Deployment
+
 ## Technologies 
-## Needs of this project
-pip freeze
-pip install -r requirements.txt
-.gitignore
-web-app using flask
-## Getting Started
+1. Python libraries bs4, flask, pandas, matplotlib, scikit, numpy, seaborn
+2. HTML
+3. heroku for deployment
+
+<! -- ## Needs of this project -->
+## Run Locally
+### Run this program on your computer
+1. fork this repository
+2. Open terminal, chose the path where you want this program to be saved and run 
+  git clone 'paste the Https link'
+3. From terminal enter in to the projects directory then run the below code that will install the dependencies required for this program
+  pip install -r requirements.txt
+4. After the downloads, run the below code that will start the program
+  python app.py
+5. In the terminal, find the server link shown as 'Running on http://127.0.0.1:5000/'. 
+
 ## Contributing
 
-Contributions are always welcome!
+I welcome any contributions from you all to make this program work efficiently and the web app to look more nicer. There are many things that can be improved in the project that I will list a few below
+1. The web application interface is very simple but the interface is not so nice. This can be improved with CSS. I kept the interface like it served my purpose of showcasing the predictions and the data science work. 
+2. If you also specialise in data science, you can also showcase more details on the web program such as charts, accuracy numbers, differences between other machine learning models, etc. This will make the web app more interesting and more informative. 
+3. If you are begginer in coding and learning python, you can implement new code that serves some need or improvise some existing code 
+4. You can test new machine learning models or algorithms for improving its performance
+5. You want to learn how to contribute to the open source projects. Add a code, edit a document like this one, add more features, etc. 
 
-See `contributing.md` for ways to get started.
+### If you are interested, fork the project, clone the repository, make changes, send a pull requrest. 
 
-Please adhere to this project's `code of conduct`.
 
-  
 ## Demo
-
 Insert gif or link to demo
-
   
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
 
   
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
+If you have any feedback, please reach out to us at i.am.dhage@gmail.com
 
   
-## Installation
 
-Install my-project with npm
-
-```bash
-  npm install my-project
-  cd my-project
-```
-    
 ## Lessons Learned
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+1. How a data science project is supposed to be implemented from it initiation to deployment.
+2. How flask can be used to deploy a ML model
+3. How to scrape websites. Static and Dynamic
 
   
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://link-to-project
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-
   
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
   
-## Related
 
-Here are some related projects
-
-[Awesome README](https://github.com/matiassingers/awesome-readme)
-
-  
 ## Sources
+
 ## License
-why is it important?
+
 
 
 
