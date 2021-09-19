@@ -1,5 +1,5 @@
 ## Overview
-Air Quality Prediction. In this project, we follow the complete life cycle of a data science project from data gathering to deployment of machine learning model. 
+Air Quality Prediction. In this project, we follow the complete life cycle of a data science project from data gathering to deployment of machine learning model. Here is the [link](https://air-prediction.herokuapp.com) where it is deployed. 
 
 ## Description
 This [website](https://en.tutiempo.net/climate) will have climate data of every country in the world with historical data in some cases date back to 1929. Using a specified locations climate data, we perform feature engineering, explanatory data analysis, feature selection, a various machine learning model training, and deployment of the application to a server. 
