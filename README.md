@@ -35,7 +35,7 @@ The years that I am entering are the climates historic datasets. The results are
 ```
 
 ## Project status
-    On-Going
+    Completed but open for contributions, code corrections, improvements
 ## Steps performed in this project
 1. Scraped website, and saved its contents in a folder called HTML_Data
 2. The target feature which is also required to train the model is in AQI folder which is saved from a different source. 
