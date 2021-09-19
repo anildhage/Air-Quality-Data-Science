@@ -15,7 +15,7 @@ def home():
         year = request.form['value']
         if len(year) == 0:
             return render_template('home.html')
-        elif year != 2013 or year != 2014 or year != 2015 or year != 2016 or year != 2017 or year != 2018:
+        elif not year in ('2013', '2014', '2015', '2016', '2017', '2018', '2013-2018'):
             return render_template('home.html', num = 'You did not enter the above year correctly')
         else:
             df=pd.read_csv('Data/Real-Data/real_{}.csv'.format(year))
@@ -24,6 +24,7 @@ def home():
             return render_template('home.html', prediction = my_prediction)
    else:
        return render_template('home.html')
+
 
 
 
