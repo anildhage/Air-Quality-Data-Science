@@ -12,10 +12,17 @@ After learning about python programming language, this topic of data science was
 ![](ml.gif)
 The years that I am entering are the climates historic datasets. The results are shown below Predictions
 
-## Directory
+## Project Structure
 ```
+.
 ├── Data
-│   ├── AQI 
+│   ├── AQI
+│   │   ├── aqi2013.csv
+│   │   ├── aqi2014.csv
+│   │   ├── aqi2015.csv
+│   │   ├── aqi2016.csv
+│   │   ├── aqi2017.csv
+│   │   └── aqi2018.csv
 │   ├── Deployment
 │   │   ├── Static
 │   │   └── Templates
@@ -27,10 +34,40 @@ The years that I am entering are the climates historic datasets. The results are
 │   │   ├── 2017
 │   │   └── 2018
 │   └── Real-Data
+│       ├── real_2013-2018.csv
+│       ├── real_2013.csv
+│       ├── real_2014.csv
+│       ├── real_2015.csv
+│       ├── real_2016.csv
+│       ├── real_2017.csv
+│       └── real_2018.csv
+├── Extract_combine.py
+├── Html_script.py
+├── LICENSE.md
 ├── ML-Modals
+│   ├── DecisionTreeRegressor.ipynb
+│   ├── KNearestNeighborRegressor.ipynb
+│   ├── LassoRegression.ipynb
+│   ├── LinearRegression.ipynb
+│   ├── RandomForestRegressor.ipynb
+│   └── XgboostRegressor.ipynb
+├── Plot_AQI.py
+├── Procfile
+├── README.md
+├── __pycache__
+├── app.py
+├── ml.gif
 ├── pickle-files
+│   └── RandomForestRegressor.pkl
+├── requirements.txt
 └── templates
+    └── home.html
 
+
+```
+FYI: The above structure is created using the below code from the terminal. You may want to install the dependencies of tree before running
+```
+tree -L 3
 
 ```
 
