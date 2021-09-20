@@ -74,8 +74,8 @@ tree -L 3
 ## Project status
     Completed but open for contributions, code corrections, improvements
 ## Steps performed in this project
-1. Scraped website, and saved its contents in a folder called HTML_Data
-2. The target feature which is also required to train the model is in AQI folder which is saved from a different source. 
+1. Scraped website, and saved its contents in a folder called HTML_Data. This is the data treated as independent features need to train the model
+2. The target feature which is also required to train the model is in AQI folder which is saved from a different source. It was a paid source. Hence, for you all the raw data is in this folder
 3. Both of these folders having the data we need. We bring them together for preprocessing and training. They are saved in the Real-Data folder
 4. We use jupyter notebooks or google colab to process the raw data, then train using ML-Models. Models performed can be found in ML-Modals folder
 5. In order to deploy the program, we save the models in pickle file which you can find it in the pickle-files folder
