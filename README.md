@@ -122,6 +122,11 @@ I welcome any contributions from you all to make this program work efficiently a
 4. You can test new machine learning models or algorithms for improving its performance
 5. You want to learn how to contribute to the open source projects. Add a code, edit a document like this one, add more features, etc. 
 
+## Hactoberfest 2021
+
+Contribute to open source, learn and earn prizes. This fest is valid from 1st to 31st October. 
+
+
 ### If you are interested, fork the project, clone the repository, make changes, send a pull requrest. 
 
 
